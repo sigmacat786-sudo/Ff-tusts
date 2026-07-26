@@ -4,7 +4,7 @@ from flask import Flask, render_template
 
 # ─── Configuration ──────────────────────────────────────────────────────────
 # Source quiz URL — shown openly to users (not hidden/cloaked).
-QUIZ_URL = "https://smartyms-harsh-quiz-system.onrender.com/play?v=MSBro_Physic_quiz"
+QUIZ_URL = "https://vidcloud.eu.org/start-test/?batch_id=698adaafee5f29171102c9ca&test_id=6a4cb3ab0e1226da53dddcec"
 
 # ─── Flask app ──────────────────────────────────────────────────────────────
 flask_app = Flask(__name__)
