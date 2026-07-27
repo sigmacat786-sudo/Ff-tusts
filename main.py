@@ -12,7 +12,7 @@ from utils.db import get_db
 # Public domain shown/used in every generated Lecture/Quiz link.
 # Hardcoded (not read from env) on purpose — this is the ONLY line to edit
 # if this service's Render domain ever changes.
-PUBLIC_BASE_URL = "https://smartyms-harsh-live-class-system.onrender.com"
+PUBLIC_BASE_URL = "https://smartyms-harsh-test-system.onrender.com"
 
 # ─── Server-side Admin Auth (keys never reach the browser) ────────────────
 OWNER_NAME = "ViPvxMS10BRO"
@@ -25,7 +25,7 @@ flask_app = Flask(__name__)
 # SECRET_KEY signs the session cookie. Set a SECRET_KEY env var on Render so
 # admin sessions survive restarts/redeploys — without it a fallback is used
 # and everyone is logged out whenever the process restarts.
-flask_app.secret_key = os.environ.get("SECRET_KEY", "lectyebro-dev-fallback-secret-change-me")
+flask_app.secret_key = os.environ.get("SECRET_KEY", "c7c8d55d9d8b4a3c2f71b1f5f79c8ea84e8d2c7c3a4b51d70b91ef0fdad5f2f6f13e9a7b8c6d1e24f4a8e9c0b5d3a7f6d8e2c1b9a4f7d5e8c3a6b1d0f9e2c7")
 flask_app.config["SESSION_COOKIE_HTTPONLY"] = True
 flask_app.config["SESSION_COOKIE_SAMESITE"] = "Lax"
 flask_app.config["PERMANENT_SESSION_LIFETIME"] = timedelta(hours=12)
